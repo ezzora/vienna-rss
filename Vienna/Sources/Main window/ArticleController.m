@@ -1157,20 +1157,20 @@
 
 - (BOOL)filterArticle:(Article *)article usingMode:(NSInteger)filterMode {
     switch (filterMode) {
-        case MA_Filter_Unread:
+        case MAFilterModeUnread:
             return !article.read;
             break;
-        case MA_Filter_LastRefresh: {
+        case MAFilterModeLastRefresh: {
             NSDate *date = article.createdDate;
             Preferences *prefs = [Preferences standardPreferences];
             NSComparisonResult result = [date compare:[prefs objectForKey:MAPref_LastRefreshDate]];
             return result != NSOrderedAscending;
             break;
         }
-        case MA_Filter_Today:
+        case MAFilterModeToday:
             return [NSCalendar.currentCalendar isDateInToday:article.date];
             break;
-        case MA_Filter_48h: {
+        case MAFilterModeLast48h: {
             NSDate *twoDaysAgo = [NSCalendar.currentCalendar dateByAddingUnit:NSCalendarUnitDay
                                                                         value:-2
                                                                        toDate:[NSDate date]
@@ -1178,10 +1178,10 @@
             return [article.date compare:twoDaysAgo] != NSOrderedAscending;
             break;
         }
-        case MA_Filter_Flagged:
+        case MAFilterModeFlagged:
             return article.flagged;
             break;
-        case MA_Filter_Unread_Or_Flagged:
+        case MAFilterModeUnreadOrFlagged:
             return (!article.read || article.flagged);
             break;
         default:
