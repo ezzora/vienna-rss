@@ -97,16 +97,6 @@ extern NSString * MA_PBoardType_RSSSource;
 extern NSString * MA_PBoardType_url;
 extern NSString * MA_PBoardType_urln;
 
-// New articles notification method
-// (managed as an array of binary flags)
-#define MA_NewArticlesNotification_Badge	1
-#define MA_NewArticlesNotification_Bounce	2
-
-// Refresh folder options
-#define MA_Refresh_RedrawList			0
-#define MA_Refresh_ReapplyFilter		1
-#define MA_Refresh_SortAndRedraw		3
-
 // View animation tags
 #define MA_ViewTag_Filterbar			1
 #define MA_ViewTag_Statusbar			2
@@ -125,17 +115,3 @@ extern AEKeyword DataItemGUID;
 extern AEKeyword DataItemSourceName;
 extern AEKeyword DataItemSourceHomeURL;
 extern AEKeyword DataItemSourceFeedURL;
-
-// Layout styles
-#define MA_Layout_Report				1
-#define MA_Layout_Condensed				2
-#define MA_Layout_Unified				3
-
-// Folders tree sort method
-#define MA_FolderSort_Manual			0
-#define MA_FolderSort_ByName			1
-
-// Empty trash option on quitting
-#define MA_EmptyTrash_None				0
-#define MA_EmptyTrash_WithoutWarning	1
-#define MA_EmptyTrash_WithWarning		2

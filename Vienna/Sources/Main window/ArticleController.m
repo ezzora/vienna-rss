@@ -150,12 +150,12 @@
 
 	switch (newLayout)
 	{
-		case MA_Layout_Report:
-		case MA_Layout_Condensed:
+        case MALayoutReport:
+		case MALayoutCondensed:
 			self.mainArticleView = self.articleListView;
 			break;
 
-		case MA_Layout_Unified:
+		case MALayoutUnified:
 			self.mainArticleView = self.unifiedListView;
 			break;
 	}
@@ -305,7 +305,7 @@
 		[descriptors insertObject:sortDescriptor atIndex:0];
 	}
 	prefs.articleSortDescriptors = descriptors;
-	[mainArticleView refreshFolder:MA_Refresh_SortAndRedraw];
+	[mainArticleView refreshFolder:MARefreshSortAndRedraw];
 }
 
 /* sortIsAscending
@@ -335,7 +335,7 @@
 	{
 		descriptors[0] = sortDescriptor.reversedSortDescriptor;
 		prefs.articleSortDescriptors = descriptors;
-		[mainArticleView refreshFolder:MA_Refresh_SortAndRedraw];
+		[mainArticleView refreshFolder:MARefreshSortAndRedraw];
 	}
 }
 
@@ -450,7 +450,7 @@
 		// This can happen with smart folders, which have the same articles as other folders.
 		self.currentArrayOfArticles = @[];
 		self.folderArrayOfArticles = @[];
-		[mainArticleView refreshFolder:MA_Refresh_RedrawList];
+		[mainArticleView refreshFolder:MARefreshRedrawList];
 
 		currentFolderId = newFolderId;
 		[self reloadArrayOfArticles];
@@ -507,7 +507,7 @@
 				self->shouldPreserveSelectedArticle = NO;
 			}
 
-            [self->mainArticleView refreshFolder:MA_Refresh_ReapplyFilter];
+            [self->mainArticleView refreshFolder:MARefreshReapplyFilter];
 
 			if (self->guidOfArticleToSelect != nil )
 			{
@@ -699,7 +699,7 @@
 		[self reloadArrayOfArticles];
 	else
 	{
-		[mainArticleView refreshFolder:MA_Refresh_RedrawList];
+		[mainArticleView refreshFolder:MARefreshRedrawList];
 		if (currentArrayOfArticles.count > 0u)
 		{
 			if (guidToSelect != nil)
@@ -769,7 +769,7 @@
 	}
 	self.currentArrayOfArticles = currentArrayCopy;
 	self.folderArrayOfArticles = folderArrayCopy;
-	[mainArticleView refreshFolder:MA_Refresh_RedrawList];
+	[mainArticleView refreshFolder:MARefreshRedrawList];
 
 	// Ensure there's a valid selection
     if (currentArrayOfArticles.count > 0u) {
@@ -811,7 +811,7 @@
 	[undoManager setActionName:NSLocalizedString(@"Flag", nil)];
 
     [self innerMarkFlaggedByArray:articleArray flagged:flagged];
-	[mainArticleView refreshFolder:MA_Refresh_RedrawList];
+	[mainArticleView refreshFolder:MARefreshRedrawList];
 }
 
 /* innerMarkFlaggedByArray
@@ -861,7 +861,7 @@
 
     [self innerMarkReadByArray:articleArray readFlag:readFlag];
 
-	[mainArticleView refreshFolder:MA_Refresh_RedrawList];
+	[mainArticleView refreshFolder:MARefreshRedrawList];
 }
 
 /* innerMarkReadByArray
@@ -965,7 +965,7 @@
 			[theArticle markRead:YES];
 	}
 	
-	[mainArticleView refreshFolder:MA_Refresh_RedrawList];
+	[mainArticleView refreshFolder:MARefreshRedrawList];
 }
 
 /* wrappedMarkAllFoldersReadInArray
@@ -1059,7 +1059,7 @@
 		[self reloadArrayOfArticles];
 	}
 	else if (needRefilter) {
-		[mainArticleView refreshFolder:MA_Refresh_ReapplyFilter];
+		[mainArticleView refreshFolder:MARefreshReapplyFilter];
 	}
 }
 
@@ -1130,7 +1130,7 @@
     NSInteger folderId = ((NSNumber *)nc.object).integerValue;
     Folder * currentFolder = [[Database sharedManager] folderFromID:currentFolderId];
     if ((folderId == currentFolderId) || (currentFolder.type != VNAFolderTypeRSS && currentFolder.type != VNAFolderTypeOpenReader)) {
-        [mainArticleView refreshFolder:MA_Refresh_RedrawList];
+        [mainArticleView refreshFolder:MARefreshRedrawList];
     }
 }
 
@@ -1198,7 +1198,7 @@
     if ([keyPath isEqualToString:MAPref_FilterMode]) {
         // Update the list of articles when the user changes the filter.
         @synchronized(mainArticleView) {
-            [mainArticleView refreshFolder:MA_Refresh_ReapplyFilter];
+            [mainArticleView refreshFolder:MARefreshReapplyFilter];
         }
     }
 }

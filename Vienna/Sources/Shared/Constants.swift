@@ -30,3 +30,42 @@ enum MAFilterMode: Int {
     flagged = 5,
     unreadOrFlagged = 6
 }
+
+@objc
+enum MALayout: Int {
+    case
+    report = 1,
+    condensed = 2,
+    unified = 3
+}
+
+@objc
+enum MAEmptyTrash: Int {
+    case
+    none = 0,
+    withoutWarning = 1,
+    withWarning = 2
+}
+
+@objc
+enum MAFolderSort: Int {
+    case
+    manual = 0,
+    byName = 1
+}
+
+@objc
+enum MARefresh: Int {
+    case
+    redrawList = 0,
+    reapplyFilter = 1,
+    sortAndRedraw = 3
+}
+
+/// New articles notification method (managed as an array of binary flags)
+@objc
+enum MANewArticlesNotification: Int {
+    case
+    badge = 1,
+    bounce = 2
+}
