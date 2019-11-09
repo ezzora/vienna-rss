@@ -27,7 +27,6 @@
 #import "RefreshManager.h"
 #import "Preferences.h"
 #import "StringExtensions.h"
-#import "NSNotificationAdditions.h"
 #import "KeyChain.h"
 #import "ActivityItem.h"
 #import "Article.h"

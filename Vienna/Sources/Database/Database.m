@@ -24,7 +24,6 @@
 #import "StringExtensions.h"
 #import "Constants.h"
 #import "ArticleRef.h"
-#import "NSNotificationAdditions.h"
 #import "Debug.h"
 #import "VNADatabaseMigration.h"
 #import "Article.h"
