@@ -43,13 +43,11 @@
 		0349813E1A206FD900014F29 /* GeneralPreferencesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0349813D1A206FD900014F29 /* GeneralPreferencesViewController.m */; };
 		034981411A20701600014F29 /* AdvancedPreferencesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 034981401A20701600014F29 /* AdvancedPreferencesViewController.m */; };
 		035B703A19E0E4AE00197334 /* Vienna_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 035B703919E0E4AE00197334 /* Vienna_Tests.m */; };
-		035B704219E0E4DC00197334 /* SubscriptionModelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 035B704119E0E4DC00197334 /* SubscriptionModelTests.m */; };
 		03721E591A218CFC009C020C /* GeneralPreferencesView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03721E5B1A218CFC009C020C /* GeneralPreferencesView.xib */; };
 		03721E6E1A218D4B009C020C /* AppearancePreferencesView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03721E701A218D4B009C020C /* AppearancePreferencesView.xib */; };
 		0377BDED1D3A009B00960555 /* BitlyAPIHelperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0377BDEC1D3A009B00960555 /* BitlyAPIHelperTests.swift */; };
 		0379E2381A2082E600D58BFE /* AppearancePreferencesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0379E2371A2082E600D58BFE /* AppearancePreferencesViewController.m */; };
 		0379E23B1A20831600D58BFE /* SyncingPreferencesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0379E23A1A20831600D58BFE /* SyncingPreferencesViewController.m */; };
-		0383DC551B71B44700A11950 /* CriteriaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0383DC541B71B44700A11950 /* CriteriaTests.m */; };
 		0386A5C11E1FA586000C10CE /* BrowserPane.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0386A5BB1E1FA586000C10CE /* BrowserPane.xib */; };
 		03A131B31AA54EAC0037471F /* VNADatabaseMigration.m in Sources */ = {isa = PBXBuildFile; fileRef = 03A131B21AA54EAC0037471F /* VNADatabaseMigration.m */; };
 		03B35B841B75E9E0001DB06D /* NSDate+Vienna.m in Sources */ = {isa = PBXBuildFile; fileRef = 03B35B831B75E9E0001DB06D /* NSDate+Vienna.m */; };
@@ -170,6 +168,8 @@
 		B28DE7F70B754E590062F879 /* enclosure_header.tiff in Resources */ = {isa = PBXBuildFile; fileRef = B28DE7F50B754E590062F879 /* enclosure_header.tiff */; };
 		B28DE7F80B754E590062F879 /* enclosure.tiff in Resources */ = {isa = PBXBuildFile; fileRef = B28DE7F60B754E590062F879 /* enclosure.tiff */; };
 		B2B37ACE110A65DA0070EDA6 /* filter-icon.tiff in Resources */ = {isa = PBXBuildFile; fileRef = B2B37ACD110A65DA0070EDA6 /* filter-icon.tiff */; };
+		B84A74162376E6AD000FDC4E /* SubscriptionModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B84A74152376E6AD000FDC4E /* SubscriptionModelTests.swift */; };
+		B84A74182376FE41000FDC4E /* CriteriaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B84A74172376FE41000FDC4E /* CriteriaTests.swift */; };
 		B8B9D6D323685C7400EAE65C /* FeedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8B9D6D223685C7400EAE65C /* FeedItem.swift */; };
 		B8E89F5C2370BEED00FDD648 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E89F5B2370BEED00FDD648 /* Constants.swift */; };
 		EA1A7620148FA32B004A6B8F /* googleFeed.tiff in Resources */ = {isa = PBXBuildFile; fileRef = EA1A761F148FA32B004A6B8F /* googleFeed.tiff */; };
@@ -321,14 +321,12 @@
 		035B703519E0E4AE00197334 /* Vienna Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Vienna Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		035B703819E0E4AE00197334 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		035B703919E0E4AE00197334 /* Vienna_Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Vienna_Tests.m; sourceTree = "<group>"; };
-		035B704119E0E4DC00197334 /* SubscriptionModelTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubscriptionModelTests.m; sourceTree = "<group>"; };
 		0377BDEB1D3A009B00960555 /* Vienna Tests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Vienna Tests-Bridging-Header.h"; sourceTree = "<group>"; };
 		0377BDEC1D3A009B00960555 /* BitlyAPIHelperTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BitlyAPIHelperTests.swift; sourceTree = "<group>"; };
 		0379E2361A2082E600D58BFE /* AppearancePreferencesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppearancePreferencesViewController.h; sourceTree = "<group>"; };
 		0379E2371A2082E600D58BFE /* AppearancePreferencesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppearancePreferencesViewController.m; sourceTree = "<group>"; };
 		0379E2391A20831600D58BFE /* SyncingPreferencesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SyncingPreferencesViewController.h; sourceTree = "<group>"; };
 		0379E23A1A20831600D58BFE /* SyncingPreferencesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SyncingPreferencesViewController.m; sourceTree = "<group>"; };
-		0383DC541B71B44700A11950 /* CriteriaTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CriteriaTests.m; sourceTree = "<group>"; };
 		0386A5BB1E1FA586000C10CE /* BrowserPane.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BrowserPane.xib; sourceTree = "<group>"; };
 		03A131B11AA54EAC0037471F /* VNADatabaseMigration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VNADatabaseMigration.h; sourceTree = "<group>"; };
 		03A131B21AA54EAC0037471F /* VNADatabaseMigration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VNADatabaseMigration.m; sourceTree = "<group>"; };
@@ -533,6 +531,8 @@
 		B2B37ACD110A65DA0070EDA6 /* filter-icon.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = "filter-icon.tiff"; sourceTree = "<group>"; };
 		B2E09F2B111192B7003B530A /* DSClickableURLTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSClickableURLTextField.h; sourceTree = "<group>"; };
 		B2E09F2C111192B7003B530A /* DSClickableURLTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSClickableURLTextField.m; sourceTree = "<group>"; };
+		B84A74152376E6AD000FDC4E /* SubscriptionModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionModelTests.swift; sourceTree = "<group>"; };
+		B84A74172376FE41000FDC4E /* CriteriaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CriteriaTests.swift; sourceTree = "<group>"; };
 		B8B9D6D1236850DE00EAE65C /* Vienna_Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Vienna_Prefix.pch; sourceTree = "<group>"; };
 		B8B9D6D223685C7400EAE65C /* FeedItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedItem.swift; sourceTree = "<group>"; };
 		B8E89F5B2370BEED00FDD648 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -1164,8 +1164,8 @@
 				4D36B4491D37F902009736C1 /* models */,
 				035B703919E0E4AE00197334 /* Vienna_Tests.m */,
 				035B703719E0E4AE00197334 /* Supporting Files */,
-				035B704119E0E4DC00197334 /* SubscriptionModelTests.m */,
-				0383DC541B71B44700A11950 /* CriteriaTests.m */,
+				B84A74152376E6AD000FDC4E /* SubscriptionModelTests.swift */,
+				B84A74172376FE41000FDC4E /* CriteriaTests.swift */,
 				03EFD56F1B720AB0007EF284 /* ExportTests.m */,
 				03B752411B74814B00FD3FDB /* RichXMLParserTests.m */,
 				4D36B44E1D38007D009736C1 /* NSURL+URIEquivalence.h */,
@@ -2186,13 +2186,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				0377BDED1D3A009B00960555 /* BitlyAPIHelperTests.swift in Sources */,
-				035B704219E0E4DC00197334 /* SubscriptionModelTests.m in Sources */,
 				4D36B44B1D37F91E009736C1 /* ArticleTests.m in Sources */,
 				03B752421B74814B00FD3FDB /* RichXMLParserTests.m in Sources */,
-				0383DC551B71B44700A11950 /* CriteriaTests.m in Sources */,
+				B84A74162376E6AD000FDC4E /* SubscriptionModelTests.swift in Sources */,
 				F648C2B81E7F3BEA00CE4043 /* DirectoryMonitorTests.swift in Sources */,
 				4D36B4501D38007D009736C1 /* NSURL+URIEquivalence.m in Sources */,
 				035B703A19E0E4AE00197334 /* Vienna_Tests.m in Sources */,
+				B84A74182376FE41000FDC4E /* CriteriaTests.swift in Sources */,
 				03EFD5701B720AB0007EF284 /* ExportTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
